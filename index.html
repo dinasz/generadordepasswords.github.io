@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectogats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <span><h1>Generador de Contraseñas</h1></span>
+    <p id="texto">Bienvenido al generador de contraseñas 420. Por favor especifique las características de su contraseña deseada</p>    
+</div>
+
+<div class="container">
+
+    <div class="container2">
+    <div class="characters">
+        <label for="length">Ingrese la cantidad de caracteres (Entre 8 y 20)<br></label>
+        <input type="number" id="length" value="8" min="8" max="20">
+    </div><br>
+
+    <div class="options">
+        <span id="txtopt">Elija sus opciones adicionales:</span>
+
+        <table class="opts">
+            <tr>
+                <td class="opts"><input type="checkbox" name="" id="numeros" checked> Incluir números</td> 
+            </tr>
+            <tr>
+                <td class="opts"><input type="checkbox" name="" id="mayus" checked> Mayúsculas</td> 
+            </tr>
+            <tr>
+                <td class="opts"><input type="checkbox" name="" id="minus" checked> Minúsculas</td> 
+            </tr>
+            <tr>
+                <td class="opts"><input type="checkbox" name="" id="simbolos"> Símbolos</td> 
+            </tr>
+        </table>
+
+        <div id="generatee">
+        </label><button id="generate">Generar contraseña</button>
+    </div>
+    </div><br>
+    
+    <div class="result">
+        Su contraseña generada:<br>
+        <textarea id="password" readonly></textarea>
+    </div>
+</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
